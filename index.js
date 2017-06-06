@@ -18,16 +18,16 @@ interval = setInterval(() => {
   let message = JSON.stringify({
     timestampUTC: timestamp,
     messageCount: count,
-    text: 'Hello! I am an amazing message!',
+    text: `MESSAGE ${count}: Hello! I am an amazing message! (sent ${timestamp}`,
     keyOne: true,
     keyTwo: 'value'
   })
 
   let endpointOptions = {
-    protocol: 'http:',
-    host: 'localhost',
-    path: '/',
-    port: '3001',
+    protocol: 'https:',
+    host: 'hooks.slack.com',
+    path: '/services/xxxxxxxxx/xxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx',
+    port: '443',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -44,4 +44,4 @@ interval = setInterval(() => {
   req.write(message)
   req.end()
   console.log('message sent!')
-}, 2000)
+}, 10000)
