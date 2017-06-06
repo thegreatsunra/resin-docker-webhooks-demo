@@ -1,0 +1,40 @@
+{
+  "name": "resin-docker-webhooks-demo",
+  "description": "Webhooks from a Resin.io Docker container",
+  "version": "0.1.0",
+  "homepage": "https://github.com/thegreatsunra/resin-docker-webhooks-demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thegreatsunra/resin-docker-webhooks-demo.git"
+  },
+  "author": "Dane Petersen <thegreatsunra@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^7.0.0",
+    "npm": "^4.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+    },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js ./",
+    "start": "node ./endpoint.js & node ./index.js"
+  },
+  "main": "index.js",
+  "keywords": [
+    "resin.io",
+    "webserver",
+    "nodejs",
+    "expressjs"
+  ]
+}
