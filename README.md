@@ -1,6 +1,6 @@
 # resin-docker-webhooks-demo
 
-> Webhooks demo
+> Webhooks demo from a Resin.io Docker container
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ node ./messenger.js
 4) Add your resin.io application's remote repository to your project repo
 
 ```bash
-# run this command from your resin-docker-aws-iot-demo folder
+# run this command from your resin-docker-webhooks-demo folder
 git remote add resin username@git.resin.io:username/myapp.git
 ```
 

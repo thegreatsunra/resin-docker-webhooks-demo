@@ -7,10 +7,10 @@ app.listen(3000, () => {
   console.log('Express listening on port 3000')
 })
 
-let interval
+let interval // eslint-disable-line
 let count = 0
 
-interval = setInterval (() => {
+interval = setInterval(() => {
   count++
 
   let now = new Date()
@@ -18,7 +18,7 @@ interval = setInterval (() => {
   let message = JSON.stringify({
     timestampUTC: timestamp,
     messageCount: count,
-    text: "Hello! I am an amazing message!",
+    text: 'Hello! I am an amazing message!',
     keyOne: true,
     keyTwo: 'value'
   })
@@ -38,7 +38,7 @@ interval = setInterval (() => {
   let req = http.request(endpointOptions, (res) => {
     res.setEncoding('utf8')
     res.on('data', (chunk) => {
-      console.log("body: " + chunk)
+      console.log('body: ' + chunk)
     })
   })
   req.write(message)
