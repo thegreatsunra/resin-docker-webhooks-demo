@@ -1,5 +1,5 @@
 const express = require('express')
-const http = require('http')
+const https = require('https')
 const app = express()
 app.use(express.static('public'))
 
@@ -18,7 +18,7 @@ interval = setInterval(() => {
   let message = JSON.stringify({
     timestampUTC: timestamp,
     messageCount: count,
-    text: `MESSAGE ${count}: Hello! I am an amazing message! (sent ${timestamp}`,
+    text: `MESSAGE ${count}: Hello! I am an amazing message! (sent ${timestamp})`,
     keyOne: true,
     keyTwo: 'value'
   })
@@ -35,7 +35,7 @@ interval = setInterval(() => {
     }
   }
 
-  let req = http.request(endpointOptions, (res) => {
+  let req = https.request(endpointOptions, (res) => {
     res.setEncoding('utf8')
     res.on('data', (chunk) => {
       console.log('body: ' + chunk)
