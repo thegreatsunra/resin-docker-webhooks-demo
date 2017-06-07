@@ -4,9 +4,9 @@
 
 ## Prerequisites
 
-1) install [node](https://nodejs.org/en/)
-2) install [git](https://git-scm.com/downloads)
-3) install [yarn](https://yarnpkg.com/lang/en/docs/install/)
+1) Install [node](https://nodejs.org/en/)
+2) Install [git](https://git-scm.com/downloads)
+3) Install [yarn](https://yarnpkg.com/lang/en/docs/install/)
 
 ## Getting started
 
